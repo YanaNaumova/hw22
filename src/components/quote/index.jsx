@@ -23,7 +23,7 @@ function Quote() {
 
   if (status === "loading")
     return (
-      <Spin tip="dd" size="large">
+      <Spin tip="loading ..." size="large">
         {content}
       </Spin>
     );
