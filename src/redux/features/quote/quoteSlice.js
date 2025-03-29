@@ -2,7 +2,7 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
 export const fetchQuote = createAsyncThunk("quote/fetchQuote", async () => {
-  const response = await axios.get("https://zenquotes.io/api/random");
+  const response = await axios.get("/api/random");
   return response.data;
 });
 
